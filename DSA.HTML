@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate DSA Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .dsa-section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease-in-out;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Ultimate DSA Guide</h1>
+    </header>
+    <main>
+        <section class="dsa-section" id="arrays">
+            <h2>1. Arrays</h2>
+            <p><strong>Sorting:</strong> QuickSort (O(nlog n)), MergeSort (O(nlog n))</p>
+            <p><strong>Searching:</strong> Binary Search (O(log n))</p>
+            <p><strong>Two Pointers:</strong> In-place manipulation</p>
+            <p><strong>Sliding Window:</strong> Finding max/min in a window</p>
+        </section>
+        <section class="dsa-section" id="linked-lists">
+            <h2>2. Linked Lists</h2>
+            <p><strong>Traversal:</strong> Iterate through nodes</p>
+            <p><strong>Insertion/Deletion:</strong> At various positions</p>
+            <p><strong>Reversal:</strong> Recursive & Iterative</p>
+            <p><strong>Cycle Detection:</strong> Floyd's Algorithm</p>
+        </section>
+        <section class="dsa-section" id="hash-tables">
+            <h2>3. Hash Tables</h2>
+            <p><strong>Understanding:</strong> Hash functions, insertion/deletion, collision handling</p>
+        </section>
+        <section class="dsa-section" id="trees">
+            <h2>4. Trees</h2>
+            <p><strong>Traversal:</strong> Inorder, Preorder, Postorder</p>
+            <p><strong>Searching:</strong> Node lookup in BST</p>
+        </section>
+        <section class="dsa-section" id="stacks-queues">
+            <h2>5. Stacks & Queues</h2>
+            <p><strong>Stacks:</strong> Push, Pop, Peek</p>
+            <p><strong>Queues:</strong> Enqueue, Dequeue</p>
+        </section>
+        <section class="dsa-section" id="heaps">
+            <h2>6. Heaps</h2>
+            <p><strong>Operations:</strong> Insertion, Deletion, Extract-Min/Max</p>
+        </section>
+        <section class="dsa-section" id="graphs">
+            <h2>7. Graphs</h2>
+            <p><strong>Traversal:</strong> BFS, DFS</p>
+            <p><strong>Shortest Path:</strong> Dijkstra's Algorithm</p>
+        </section>
+        <section class="dsa-section" id="tries">
+            <h2>8. Tries</h2>
+            <p><strong>Operations:</strong> Insert, Search, Autocomplete</p>
+        </section>
+        <section class="dsa-section" id="union-find">
+            <h2>9. Union-Find</h2>
+            <p><strong>Operations:</strong> Find, Union, Cycle Detection</p>
+        </section>
+        <section class="dsa-section" id="algorithms">
+            <h2>10. General Algorithms</h2>
+            <p><strong>Recursion:</strong> Factorial, Tree Traversals, DFS</p>
+            <p><strong>Dynamic Programming:</strong> Fibonacci, Knapsack</p>
+            <p><strong>Greedy:</strong> Kruskal's Algorithm</p>
+            <p><strong>Backtracking:</strong> Sudoku Solver, N-Queens</p>
+        </section>
+        <button id="animateBtn">Animate Sections</button>
+    </main>
+    <script>
+        document.getElementById('animateBtn').addEventListener('click', function() {
+            document.querySelectorAll('.dsa-section').forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
